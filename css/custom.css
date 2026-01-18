@@ -2100,7 +2100,7 @@ header.main-header .header-sticky.active {
 } */
 
 /************************************/
-/***     10. Our Membership css     ***/
+/***     10. Our Membership category css     ***/
 /************************************/
 
 .membership {
@@ -2184,6 +2184,98 @@ header.main-header .header-sticky.active {
 @media (max-width: 768px) {
   .general-benefits {
     grid-template-columns: 1fr;
+  }
+}
+
+/************************************/
+/***     10. Our Membership criteria css     ***/
+/************************************/
+.membership-container {
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+/* LEFT SECTION */
+.left-section,
+.right-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.left-section {
+  flex: 1.2;
+}
+
+.right-section {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.option {
+  margin-bottom: 20px;
+}
+
+.option h3 {
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.option ul {
+  padding-left: 20px;
+}
+
+.option ul li {
+  margin-bottom: 6px;
+  color: var(--primary-color);
+}
+
+/* BANK INFO */
+.bank {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.right-section p{
+color:var(--primary-color)
+}
+
+.bank p {
+  margin-bottom: 5px;
+}
+.bank strong {
+  color: var(--primary-color);
+}
+
+/* TEXT SECTIONS */
+.contact-text,
+.financial-year,
+.disclaimer {
+  margin-top: 20px;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+/* EMAIL LINK */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .membership-container {
+    flex-direction: column;
   }
 }
 
@@ -3482,7 +3574,7 @@ header.main-header .header-sticky.active {
 
 .footer-links-box {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: end;
   gap: 30px 90px;
   margin-left: 7.813vw;
@@ -3533,6 +3625,22 @@ header.main-header .header-sticky.active {
 .footer-contact-links ul li {
   margin-bottom: 15px;
 }
+
+/* === FOOTER LAYOUT SAFETY FIX === */
+.footer-links-box {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-left: 0;
+}
+
+.footer-links {
+  width: max-content;
+  min-width: 200px;
+}
+
 
 .footer-contact-links p {
   color: var(--white-color);
