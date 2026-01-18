@@ -52,7 +52,7 @@
   --secondary-color: #f6f6f7;
   --bg-color: #ffffff;
   --text-color: #737681;
-  --accent-color: #734bdf;
+  --accent-color: #057b46;
   --white-color: #ffffff;
   --divider-color: #161a2d1a;
   --dark-divider-color: #ffffff1a;
@@ -306,48 +306,46 @@ a:focus {
 
 .preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: 1000;
-  background: var(--primary-color);
+  background: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.loading-container,
-.loading {
-  height: 100px;
-  position: relative;
-  width: 100px;
-  border-radius: 100%;
-}
-
 .loading-container {
-  margin: 40px auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
 }
 
 .loading {
-  border: 1px solid transparent;
-  border-color: transparent var(--white-color) transparent var(--white-color);
-  animation: rotate-loading 1.5s linear 0s infinite normal;
-  transform-origin: 50% 50%;
-}
-
-.loading-container:hover .loading,
-.loading-container .loading {
-  transition: all 0.5s ease-in-out;
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-color: transparent var(--accent-color) transparent var(--accent-color);
+  animation: rotate-loading 1.5s linear infinite;
 }
 
 #loading-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 66px;
+  width: 350px;
+  height: 350px;
   transform: translate(-50%, -50%);
 }
+
+#loading-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
 
 @keyframes rotate-loading {
   0% {
@@ -485,9 +483,9 @@ header.main-header {
 header.main-header .header-sticky {
   position: relative;
   top: 0;
-  background: var(--dark-divider-color);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--white-color);
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
   z-index: 100;
 }
 
@@ -502,7 +500,7 @@ header.main-header .header-sticky.active {
   left: 0;
   right: 0;
   transform: translateY(0);
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   border-bottom: 1px solid var(--dark-divider-color);
   border-radius: 0;
 }
@@ -515,6 +513,22 @@ header.main-header .header-sticky.active {
 .navbar-brand {
   padding: 0;
   margin: 0;
+  /* height: 200px; */
+}
+.nav{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.nav span{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+.nav h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-color);
 }
 .navbar-brand h3 {
   font-size: 20px;
@@ -545,7 +559,7 @@ header.main-header .header-sticky.active {
   font-weight: 500;
   line-height: 1.1em;
   padding: 12px 10px !important;
-  color: var(--white-color);
+  color: var(--accent-color);
   background: transparent;
   border-radius: 0px;
   text-transform: capitalize;
@@ -562,7 +576,7 @@ header.main-header .header-sticky.active {
 
 .main-menu ul li a:hover,
 .main-menu ul li a:focus {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .main-menu ul ul {
@@ -1473,6 +1487,9 @@ header.main-header .header-sticky.active {
 .lcci-services {
   padding: 0 20px;
   color: white;
+}
+.text-anime-style h2{
+  color: var(--primary-color);
 }
 
 .lcci-services {
@@ -3418,6 +3435,7 @@ a:hover {
 
 .main-footer {
   padding: 100px 0 0;
+  background-color: var(--accent-color);
 }
 
 .footer-header {
@@ -3438,6 +3456,9 @@ a:hover {
 
 .footer-newsletter-form {
   max-width: 480px;
+}
+.text-anime-style-3{
+  color: var(--white-color);
 }
 
 .footer-newsletter-form-content {
@@ -3559,7 +3580,7 @@ a:hover {
 }
 
 .footer-social-icons ul li a:hover {
-  border-color: var(--accent-color);
+  border-color: var(--primary-color);
 }
 
 .footer-social-icons ul li a i {
@@ -3569,7 +3590,7 @@ a:hover {
 }
 
 .footer-social-icons ul li a:hover i {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .footer-links-box {
@@ -3613,7 +3634,7 @@ a:hover {
 }
 
 .footer-links ul li a:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .footer-contact-links ul {
