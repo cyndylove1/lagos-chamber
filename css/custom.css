@@ -518,6 +518,10 @@ header.main-header .header-sticky.active {
 .nav{
  display: flex;
  align-items: center;
+}
+.navs{
+ display: flex;
+ align-items: center;
  gap: 20px;
 }
 .nav span{
@@ -525,7 +529,7 @@ header.main-header .header-sticky.active {
   font-weight: 500;
   color: var(--accent-color);
 }
-.nav h2{
+.navs h2{
   font-size: 20px;
   font-weight: 500;
   color: var(--white-color);
@@ -1111,6 +1115,7 @@ header.main-header .header-sticky.active {
   display: block;
   border-radius: 20px;
   margin-right: -215px;
+  /* width: 100%; */
 }
 
 .about-us-image figure img {
@@ -1119,7 +1124,9 @@ header.main-header .header-sticky.active {
   object-fit: cover;
   border-radius: 20px;
 }
-
+.text-anime h2{
+  color: var(--primary-color);
+}
 /* .years-experience-circle{
 	position: relative;
 	display: inline-block;
@@ -1170,7 +1177,7 @@ header.main-header .header-sticky.active {
 	font-size: 34px;
 } */
 .quality-policy {
-  padding: 60px 20px;
+  padding: 60px 5px;
   color: #161a2d;
 }
 
@@ -1304,6 +1311,9 @@ header.main-header .header-sticky.active {
   .values-list {
     grid-template-columns: 1fr;
   }
+  .about-us-image figure {
+  width: 100%;
+}
 }
 
 .about-mission-vision-box {
@@ -1484,10 +1494,7 @@ header.main-header .header-sticky.active {
   position: relative;
   z-index: 2;
 }
-.lcci-services {
-  padding: 0 20px;
-  color: white;
-}
+
 .text-anime-style h2{
   color: var(--primary-color);
 }
@@ -1564,8 +1571,9 @@ header.main-header .header-sticky.active {
     grid-template-columns: 1fr;
   }
 
-  .services-header h2 {
-    font-size: 26px;
+  .services-header h3 {
+    font-size: 18px;
+    padding-top: 20px;
   }
 }
 
@@ -2218,7 +2226,7 @@ header.main-header .header-sticky.active {
 .left-section,
 .right-section {
   background: #ffffff;
-  padding: 30px;
+  padding: 30px 15px;
   border-radius: 8px;
 }
 
@@ -2302,7 +2310,7 @@ a:hover {
 .sectoral-groups {
   background-color: #fafafa;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 60px 15px;
 }
 
 .main-title {
@@ -2844,7 +2852,7 @@ a:hover {
   border-radius: 20px;
 }
 .ethics-governance {
-  padding: 80px 20px;
+  padding: 80px 0;
   color: var(--primary);
 }
 
