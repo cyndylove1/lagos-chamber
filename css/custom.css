@@ -1472,7 +1472,7 @@ header.main-header .header-sticky.active {
   padding: 100px 0;
 }
 .feature-mode {
-  background-color: #fafafa;
+  background-color: var(--secondary-color);
 }
 .feature-mode {
   color: var(--primary-color);
@@ -2314,7 +2314,7 @@ a:hover {
 /***  Sectoral Groups ***/
 /************************************/
 .sectoral-groups {
-  background-color: #fafafa;
+  background-color: var(--secondary-color);
   margin: 0 auto;
   padding: 60px 15px;
 }
