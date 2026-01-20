@@ -3609,10 +3609,10 @@ a:hover {
 
 .footer-links-box {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: end;
   gap: 30px 90px;
-  margin-left: 7.813vw;
+  /* margin-left: 7.813vw; */
 }
 
 .footer-links {
@@ -3661,15 +3661,21 @@ a:hover {
   margin-bottom: 15px;
 }
 
-/* === FOOTER LAYOUT SAFETY FIX === */
-/* .footer-links-box {
+
+.footer-links-box {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: nowrap; 
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
   margin-left: 0;
-} */
+}
+
+.footer-links {
+  width: max-content;
+  min-width: 200px;
+}
+
 
 .footer-contact-links p {
   color: var(--white-color);
@@ -7529,11 +7535,16 @@ a:hover {
     height: 350px;
   }
 }
-@media only screen and (max-width: 767px) {
- .footer-links-box{
-  display: ;
- } 
+
+@media only screen and (max-width: 580px) {
+  .footer-links-box {
+  flex-wrap: wrap; 
+  
 }
+
+};
+  
+
 
 /************************************/
 /***   34. Home - Version 2 css   ***/
